@@ -68,7 +68,7 @@ app.get("/callback", (req, res) => {
       spotifyApi.setRefreshToken(refresh_token);
       let token = access_token
       console.log("access_token:", access_token);
-      // console.log('refresh_token:', refresh_token);
+      console.log('refresh_token:', refresh_token);
 
       console.log(
         `Sucessfully retreived access token. Expires in ${expires_in} s.`
